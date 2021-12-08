@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="magemastery.basics.handles" template="MageMastery_BasicsViewModel::handles.phtml">
+                <arguments>
+                    <argument name="myView" xsi:type="object">MageMastery\BasicsViewModel\ViewModel\MyView</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
