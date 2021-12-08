@@ -8,12 +8,6 @@ use Magento\Framework\View\Element\Template;
 /** @var MyView $myView */
 $myView = $block->getData('myView');
 ?>
-<h2>Layout Handles from Controller</h2>
-<ul>
-    <?php foreach ($block->getData('handles') as $handle): ?>
-        <li><?= $block->escapeHtml($handle);?></li>
-    <?php endforeach; ?>
-</ul>
 <h2>Layout Handles from View Model</h2>
 <ul>
     <?php foreach ($myView->getHandles() as $handle): ?>
